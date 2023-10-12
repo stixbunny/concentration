@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="the-board">
+  <div class="the-board" >
 
   </div>
 </template>

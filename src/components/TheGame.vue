@@ -1,6 +1,8 @@
 <script setup>
 import { useCardStore } from '../stores/card';
 import { useGameStore } from '../stores/game';
+import ScoreBoard from './ScoreBoard.vue';
+import TheBoard from './TheBoard.vue';
 
 const card = useCardStore();
 const game = useGameStore();
@@ -25,9 +27,8 @@ startGame();
 
 <template>
   <div class="the-game">
-    <div class="text-center" v-for="animal in card.animals" :key="animal.name">
-      {{ animal.name }}
-    </div>
+    <ScoreBoard />
+    <TheBoard />
   </div>
 </template>
 
