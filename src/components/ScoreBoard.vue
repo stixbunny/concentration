@@ -6,7 +6,7 @@ const game = useGameStore();
 
 <template>
   <div class="name-register">
-    <div>score: {{ game.score }}</div>
+    <div>success: {{ game.success }}</div>
     <div>mistakes: {{ game.mistake }}</div>
   </div>
 </template>

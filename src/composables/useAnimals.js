@@ -11,7 +11,6 @@ export const useAnimals = async function () {
         url: entry.fields.image.url,
       });
     });
-    console.log(animals);
     return animals;
   }
   // receives a rejected promise
