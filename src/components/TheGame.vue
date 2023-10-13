@@ -2,7 +2,7 @@
 import { useCardStore } from '../stores/card';
 import { useGameStore } from '../stores/game';
 import ScoreBoard from './ScoreBoard.vue';
-import TheBoard from './TheBoard.vue';
+import GameBoard from './GameBoard.vue';
 
 const card = useCardStore();
 const game = useGameStore();
@@ -26,9 +26,9 @@ startGame();
 </script>
 
 <template>
-  <div class="the-game">
+  <div class="the-game container mx-auto">
     <ScoreBoard />
-    <TheBoard />
+    <GameBoard />
   </div>
 </template>
 
