@@ -11,7 +11,8 @@ export const useGameStore = defineStore('game', () => {
   function fillCards(origin, times = 2) {
     for (let i = 0; i < times; i++) {
       origin.forEach((data) => {
-        cards.splice(randomPosition(cards), 0, { ...data });
+        const newData = {...data};
+        cards.splice(randomPosition(cards), 0, newData);
       });
     }
   }

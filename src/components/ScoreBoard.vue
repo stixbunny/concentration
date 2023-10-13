@@ -6,7 +6,7 @@ const game = useGameStore();
 
 <template>
   <div class="name-register">
-    <div v-if="!user">score: {{ game.score }}</div>
+    <div>score: {{ game.score }}</div>
     <div>mistakes: {{ game.mistake }}</div>
   </div>
 </template>
