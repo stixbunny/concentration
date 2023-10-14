@@ -26,7 +26,7 @@ startGame();
 </script>
 
 <template>
-  <div class="the-game container mx-auto">
+  <div class="the-game container mx-auto h-screen flex flex-col justify-center gap-8">
     <ScoreBoard />
     <GameBoard />
   </div>
