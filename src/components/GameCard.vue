@@ -12,12 +12,14 @@ const image = computed(() => props.url);
 const selected = ref(false);
 const cleared = ref(false);
 
+// Selects this card
 function flipCard() {
   selected.value = !selected.value;
   console.log('flippling ' + props.title)
   game.selectCard(props.title);
 }
 
+// Checks if this card is matched by looking at the score change
 watch(
   () => game.totalScore,
   (newScore, oldScore) => {
@@ -26,6 +28,7 @@ watch(
         console.log(`newScore: ${newScore} oldScore: ${oldScore}`)
         cleared.value = true;
       } else {
+        // Timeout for the animation to finish
         setTimeout(() => {
           selected.value = false;
         }, 700);
@@ -37,7 +40,7 @@ watch(
 
 <template>
   <div
-    class="game-card-container w-40 h-60 aria-hidden:pointer-events-none aria-hidden:cursor-not-allowed"
+    class="game-card-container w-24 h-28 sm:w-40 sm:h-40 lg:w-40 lg:h-48 xl:w-40 xl:h-60 aria-hidden:pointer-events-none aria-hidden:cursor-not-allowed"
     @click="flipCard"
     :aria-hidden="cleared"
   >

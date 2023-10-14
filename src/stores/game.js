@@ -17,7 +17,7 @@ export const useGameStore = defineStore('game', () => {
 
   watch(
     () => selectedCards.value.length,
-    (newLength, oldLength) => {
+    (newLength) => {
       console.log('watching')
       if (newLength === 2) {
         console.log(`selectedCards.value[0] = ${selectedCards.value[0]}`)
