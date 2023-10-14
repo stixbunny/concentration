@@ -1,15 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 :root {
-  --color-background: #f8f8f8;
+  --color-background: #c8e2f3;
   --color-text: #222222;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: steelblue;
+    --color-background: rgb(27, 47, 63);
     --color-text: #f8f8f8;
   }
 }
