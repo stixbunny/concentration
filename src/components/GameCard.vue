@@ -40,9 +40,10 @@ watch(
 
 <template>
   <div
-    class="game-card-container w-24 h-28 sm:w-40 sm:h-40 lg:w-40 lg:h-48 xl:w-40 xl:h-60 aria-hidden:pointer-events-none aria-hidden:cursor-not-allowed"
+    class="game-card-container w-24 h-28 sm:w-40 sm:h-40 lg:w-40 lg:h-48 xl:w-40 xl:h-60 aria-hidden:pointer-events-none aria-hidden:cursor-not-allowed aria-selected:pointer-events-none aria-selected:cursor-not-allowed"
     @click="flipCard"
     :aria-hidden="cleared"
+    :aria-selected="selected"
   >
     <div
       class="game-card h-full w-full relative cursor-pointer hover:scale-105 transition duration-700 shadow-sm aria-selected:scale-105 aria-selected:shadow-lg aria-selected:z-10"
