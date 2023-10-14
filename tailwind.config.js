@@ -10,8 +10,14 @@ export default {
       fontFamily: {
         score: 'Oswald, ui-serif',
       },
+      keyframes: {
+        'quick-bounce': {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg) translateY(-1rem)' },
+        },
+      },
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
+        'quick-bounce': 'quick-bounce 0.5s ease-in-out',
       }
     },
   },
