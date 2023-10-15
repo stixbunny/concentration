@@ -4,18 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-:root {
-  --color-background: #c8e2f3;
-  --color-text: #222222;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: rgb(27, 47, 63);
-    --color-text: #f8f8f8;
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -26,10 +14,6 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  /* line-height: 1.6; */
-  font-family: Roboto;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
