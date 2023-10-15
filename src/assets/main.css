@@ -3,7 +3,7 @@
 #app {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding-inline: 1rem;
   font-weight: normal;
   margin: 0 auto;
 }
