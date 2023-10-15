@@ -18,10 +18,22 @@ function checkName(event) {
       class="name-register fixed top-28 max-w-sm w-4/5 z-50 rounded shadow-sm shadow-black p-0 m-0 overflow-hidden bg-white mx-auto font-dialog"
     >
       <form @submit.prevent="checkName" class="name-register_form p-4 flex flex-col gap-4">
-        <h2 class="name-register_title m-0 text-center font-bold">Por favor ingresa tu nombre para poder jugar</h2>
-        <input type="text" name="name" placeholder="Jugador" class="name-register_name rounded shadow bg-white border p-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
-        <p class="name-register_warning text-red-500 text-xs italic hidden">Por favor ingresa un nombre de 3 cacaracteres mínimo.</p>
-        <button type="submit" class="name-register_submit rounded shadow bg-cyan-500 hover:bg-cyan-700 p-2 font-bold text-white focus:outline-none focus:shadow-outline">
+        <h2 class="name-register_title m-0 text-center font-bold">
+          Por favor ingresa tu nombre para poder jugar
+        </h2>
+        <input
+          type="text"
+          name="name"
+          placeholder="Jugador"
+          class="name-register_name rounded shadow bg-white border p-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+        <p class="name-register_warning text-red-500 text-xs italic hidden">
+          Por favor ingresa un nombre de 3 cacaracteres mínimo.
+        </p>
+        <button
+          type="submit"
+          class="name-register_submit rounded shadow bg-cyan-500 hover:bg-cyan-700 p-2 font-bold text-white focus:outline-none focus:shadow-outline"
+        >
           Ingresar
         </button>
       </form>
