@@ -15,7 +15,6 @@ const cleared = ref(false);
 // Selects this card
 function flipCard() {
   selected.value = !selected.value;
-  console.log('flippling ' + props.title)
   game.selectCard(props.title);
 }
 
@@ -25,7 +24,6 @@ watch(
   (newScore, oldScore) => {
     if (selected.value === true && cleared.value === false) {
       if (newScore > oldScore) {
-        console.log(`newScore: ${newScore} oldScore: ${oldScore}`)
         cleared.value = true;
       } else {
         // Timeout for the animation to finish

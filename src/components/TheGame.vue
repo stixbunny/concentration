@@ -15,11 +15,8 @@ const startGame = async function () {
   if (card.animals.length == 0) {
     await card.fillMainPool();
   }
-  card.fillGamePool(game.numberOfCards/2);
+  card.fillGamePool(game.numberOfCards / 2);
   game.fillCards(card.gameAnimals);
-  game.cards.forEach((card) => {
-    console.log(card);
-  });
 };
 
 startGame();

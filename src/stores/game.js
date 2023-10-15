@@ -11,22 +11,17 @@ export const useGameStore = defineStore('game', () => {
 
   function selectCard(newCardName) {
     selectedCards.value.push(newCardName);
-    console.log('selectedcards is now')
-    console.log(selectedCards.value)
   }
 
   watch(
     () => selectedCards.value.length,
     (newLength) => {
-      console.log('watching')
       if (newLength === 2) {
-        console.log(`selectedCards.value[0] = ${selectedCards.value[0]}`)
-        console.log(`selectedCards.value[1] = ${selectedCards.value[1]}`)
         if (selectedCards.value[0] === selectedCards.value[1]) {
-          success.value++
+          success.value++;
           totalScore.value++;
         } else {
-          mistake.value++
+          mistake.value++;
           totalScore.value--;
         }
         selectedCards.value.length = 0;
@@ -39,11 +34,7 @@ export const useGameStore = defineStore('game', () => {
     for (let i = 0; i < times; i++) {
       origin.forEach((data) => {
         const newData = { ...data };
-        console.log(`newData is`)
-        console.log(newData)
         cards.value.splice(randomPosition(cards.value), 0, newData);
-        console.log("cards is now")
-        console.log(cards.value)
       });
     }
   }
