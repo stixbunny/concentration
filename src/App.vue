@@ -1,17 +1,10 @@
 <script setup>
 import TheGame from './components/TheGame.vue';
 import NameRegister from './components/NameRegister.vue';
-import { useStorage } from '@vueuse/core';
-import ModalTransition from './components/ModalTransition.vue';
-
-const user = useStorage('user-name', '', localStorage);
-
 </script>
 
 <template>
-  <ModalTransition>
-    <NameRegister v-if="!user" />
-  </ModalTransition>
+  <NameRegister />
   <Suspense>
     <TheGame />
   </Suspense>

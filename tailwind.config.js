@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         score: 'Oswald, ui-serif',
+        dialog: 'Roboto, sans-serif',
       },
       keyframes: {
         'quick-bounce': {
