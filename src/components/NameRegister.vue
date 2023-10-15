@@ -23,7 +23,7 @@ function checkName(event) {
     <dialog
       open
       v-if="!user"
-      class="name-register fixed top-28 max-w-sm w-4/5 z-50 rounded shadow-sm shadow-black p-0 m-0 overflow-hidden bg-white mx-auto font-dialog"
+      class="name-register fixed top-1/3 max-w-sm w-4/5 z-50 rounded shadow-sm shadow-black p-0 m-0 overflow-hidden bg-white mx-auto font-dialog"
     >
       <form @submit.prevent="checkName" class="name-register_form p-4 flex flex-col gap-4">
         <h2 class="name-register_title m-0 text-center font-bold">
