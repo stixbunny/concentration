@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      height: {
+        'dscreen': '100dvh',
+      },
       fontFamily: {
         score: 'Oswald, ui-serif',
         dialog: 'Roboto, sans-serif',
@@ -19,7 +19,7 @@ export default {
       },
       animation: {
         'quick-bounce': 'quick-bounce 0.5s ease-in-out',
-      }
+      },
     },
   },
-}
+};

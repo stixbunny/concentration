@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div v-if="props.condition" class="backdrop fixed top-0 left-0 h-screen w-full bg-black/50 z-10"></div>
+  <div v-if="props.condition" class="backdrop fixed top-0 left-0 h-dscreen w-full bg-black/50 z-10"></div>
   <ModalTransition>
     <dialog
       open
