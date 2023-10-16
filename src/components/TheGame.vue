@@ -27,7 +27,7 @@ startGame();
 
 <template>
   <GameEnd @new-game="startGame"/>
-  <div v-if="!game.status" class="the-game container mx-auto h-dscreen flex flex-col justify-center gap-8">
+  <div v-if="!game.status" class="the-game container mx-auto h-dscreen flex flex-col justify-center gap-8 overflow-hidden">
     <ScoreBoard />
     <GameBoard />
   </div>
