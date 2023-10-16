@@ -6,7 +6,7 @@ Bienvenido a esta simple implementacion del juego Memorice ("Concentration"). Es
 
 El proyecto se encuentra desplegado en [GitHub Pages](https://stixbunny.github.io/concentration/). Sin embargo, si desea puede desplegarlo de forma local.
 
-Una vez descargados los archivos del proyecto y desde la carpeta principal hay que seguir los pasos básicos para cualquier proyecto en Vite:
+Una vez descargados los archivos del proyecto y desde la carpeta principal hay que seguir los pasos básicos para cualquier proyecto en Vite con npm:
 
 1. Instalar las dependencias del proyecto:
 ```
