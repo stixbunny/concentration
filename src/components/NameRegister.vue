@@ -19,7 +19,7 @@ function checkName(event) {
 
 <template>
   <ModalDialog :condition="!user">
-    <form @submit.prevent="checkName" class="name-register p-4 flex flex-col gap-4">
+    <form @submit.prevent="checkName" class="name-register p-4 flex flex-col gap-4 text-black dark:text-white">
       <h2 class="name-register_title m-0 text-center font-bold">
         Por favor ingresa tu nombre para poder jugar
       </h2>
@@ -27,7 +27,7 @@ function checkName(event) {
         type="text"
         name="name"
         placeholder="Jugador"
-        class="name-register_name rounded shadow bg-white border p-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        class="name-register_name rounded shadow bg-background dark:bg-background-dark border p-2 text-form dark:text-form-dark leading-tight focus:outline-none focus:shadow-outline"
       />
       <p
         class="name-register_warning text-red-500 text-xs italic data-[error=false]:hidden"
@@ -37,7 +37,7 @@ function checkName(event) {
       </p>
       <button
         type="submit"
-        class="name-register_submit rounded shadow bg-cyan-500 hover:bg-cyan-700 p-2 font-bold text-white focus:outline-none focus:shadow-outline"
+        class="name-register_submit rounded shadow bg-primary hover:bg-primary-hover dark:bg-primary-dark dark:hover:bg-primary-hover-dark p-2 font-bold text-white focus:outline-none focus:shadow-outline"
       >
         Ingresar
       </button>

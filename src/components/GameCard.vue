@@ -44,14 +44,14 @@ watch(
     :aria-selected="selected"
   >
     <div
-      class="game-card h-full w-full relative cursor-pointer hover:scale-105 transition duration-700 shadow-sm aria-selected:scale-105 aria-selected:shadow-lg"
+      class="game-card h-full w-full relative cursor-pointer hover:scale-105 transition duration-700 rounded-lg aria-selected:scale-105"
       :aria-selected="selected"
     >
       <div
-        class="game-card_back h-full w-full rounded-lg absolute bg-cyan-300 overflow-hidden"
+        class="game-card_back h-full w-full rounded-lg absolute bg-cardback dark:bg-cardback-dark shadow-sm shadow-slate-600"
       ></div>
       <div
-        class="game-card_front h-full w-full rounded-lg absolute object-cover bg-cover bg-center overflow-hidden"
+        class="game-card_front h-full w-full rounded-lg absolute object-cover bg-cover bg-center shadow-sm shadow-slate-600"
       ></div>
     </div>
   </div>

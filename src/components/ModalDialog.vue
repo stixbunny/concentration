@@ -12,7 +12,7 @@ const props = defineProps({
     <dialog
       open
       v-if="props.condition"
-      class="modal-dialog fixed top-1/3 max-w-sm w-4/5 z-50 rounded shadow-sm shadow-black p-0 m-0 overflow-hidden bg-white mx-auto font-dialog"
+      class="modal-dialog fixed top-1/3 max-w-sm w-4/5 z-50 rounded shadow-sm shadow-slate-600 p-0 m-0 overflow-hidden bg-background dark:bg-background-dark mx-auto font-dialog"
     >
     <slot></slot>
     </dialog>
