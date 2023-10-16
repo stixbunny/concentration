@@ -32,7 +32,7 @@ watch(
 
 <template>
   <div
-    class="score-board max-w-md mx-auto flex align-middle flex-row justify-around font-score text-5xl gap-4"
+    class="score-board max-w-md mx-auto flex align-middle flex-row justify-around font-score text-5xl gap-4 text-main dark:text-main-dark"
   >
     <div class="score-board_metric-success flex flex-row align-middle data-[change=true]:animate-quick-bounce" :data-change="successChange">
       <CheckIcon class="w-14 drop-shadow-md text-green-600" />{{ game.success }}

@@ -1,9 +1,21 @@
-@import './base.css';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-#app {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-inline: 1rem;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
   font-weight: normal;
-  margin: 0 auto;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
